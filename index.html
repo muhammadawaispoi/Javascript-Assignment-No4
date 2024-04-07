@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 4</title>
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+ <!-- Toastifyjs -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="body">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Assignments</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Chapter 21 - 25</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div class="container ">
+            <div>
+             <h3 class="fs-5 d-flex justify-content-center mt-5">  &emsp; &emsp;&emsp;Chapter # 21 - 25 | Strings & It's Methods </h3>
+             <hr>
+           </div>
+        </div>
+
+        <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 col-sm-12 col-md-6 mb-3 mb-md-0">
+                        <div class="h-100">
+                            <h4 class="text-center">Input</h4>
+                            <div class="border border-dark rounded-3 p-4 d-flex align-item-center">
+                                <div class="input-group">
+                                    <input type="text" id="inputText" class="form-control form-control-lg bg-white" placeholder="Type Your Text here">
+                                    <button class="btn btn-outline-secondary" onclick="clearInput()">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-12 col-sm-12 col-md-6 ">
+                        <div class="h-100">
+                            <h4 class="text-center">Original String</h4>
+                            <div class="border border-dark rounded-1 p-3  originalStringBox" id="colo">
+                                <div class="text-center" id="originalTextBox">
+                                  
+                                
+                                  
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12 col-md-6 mb-3 ">
+                            <div class="h-100">
+                                <h4 class="text-center my-3 " id="btn">Buttons</h4>
+                                <div class="buttons border border-dark rounded-3 p-4 text-center" id="button1">
+                                    <button id="btn-1" type="button" class="btn btn-danger mb-3 " onclick="lowerCase()">Convert to Lowercase</button>
+                                    <button id="btn-2" type="button" class="btn btn-danger  mb-3 " onclick="upperCase()">Convert to Uppercase</button>
+                                    <button id="btn-3" type="button" class="btn btn-danger  mb-3 "onclick="capitalize()">Convert to Capitalize</button>
+                                    <button id="btn-4" type="button" class="btn btn-danger  mb-3 "onclick="formatting()">Better Formatting</button>
+                                    <button id="btn-3" type="button" class="btn btn-danger  mb-3 "onclick="printAllCities()">Print All Cities</button>
+                                    <button id="btn-4" type="button" class="btn btn-danger  mb-3 "onclick="addCity()">Add Your City In List</button>
+                                    <button id="btn-5" type="button" class="btn btn-danger  mb-3 "onclick="checkcity()">Check Your City In List</button>
+                                    <button id="btn-2" type="button" class="btn btn-danger  mb-3 " onclick="findWord()">Find This Word</button>
+                                    <button id="btn-5" type="button" class="btn btn-danger  mb-3 "onclick="replaceWord()">Replace This Word</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 mb-3 mb-md-0">
+                            <div class="h-100">
+                            <h4 class="text-center" id="btn">Output/Result</h4>
+                        <div class="border border-dark rounded-3 p-3 mt-4 text-center" style="min-height: 318px;" id="output"></div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark border-dark" id="outputbtn" onclick="showDiolog()">Clear Statement</button>
+                          </div>
+                    </div>
+                </div>
+                    </div>
+                    
+    </main>
+    <br><br><br><br><br>
+    <footer>
+
+        <p class="text-white text-center mb-0 pt-2 pb-2">&copy; 2024. Assignments By <a href="https://umairahmad.net"
+            class="text-white fw-bold text-decoration-none">www.umairahmad.net</a></p>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Toastifyjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
